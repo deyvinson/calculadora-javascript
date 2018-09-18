@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculadora</title>
+
+    <script src="calculadora.js"></script>
+
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 18px;
+        }
+
+        .container {
+            border: 3px solid black;
+            border-radius: 7px;
+            width: 360px;
+            padding: 5px;
+            background-color: rgb(117, 208, 211);
+        }
+
+        button {
+            width: 90px;
+            height: 65px;
+            padding: 0;
+            border: 1px solid grey;
+            border-radius: 4px;
+            margin: 0;
+            background-color: rgb(226, 226, 226);
+
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 25px;
+            font-weight: lighter;
+
+            float: left;
+
+        }
+
+        button:focus {
+            box-shadow: 0 0 0 0;
+            outline: 0;
+        }
+
+        button:hover {
+            background-color: rgb(189, 187, 187);
+        }
+
+        button:active {
+            background-color: rgb(148, 145, 145);
+        }
+
+        .btn-function {
+            background-color: rgb(235, 118, 35);
+            color: white;
+            font-size: 35px;
+
+        }
+
+        .btn-function:hover {
+            background-color: #D2691E;
+        }
+
+        .btn-function:active {
+            background-color: rgb(172, 83, 20);
+        }
+
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        #screen {
+            width: 345px;
+            height: 55px;
+            background-color: grey;
+            color: white;
+            text-align: right;
+            font-size: 40px;
+            font-weight: lighter;
+            padding-right: 15px;
+            padding-top: 15px;
+            border-radius: 5px;
+            margin-bottom: 5px;
+        }
+
+        #screenAux {
+            float: left;
+            height: 65px;
+            color: white;
+            font-size: 20px;
+            padding: 6px 0px 0px 7px;
+        }
+    </style>
+
+</head>
+
+<body onload="LoadScripts()">
+
+    <div class="container" style="text-align: center">
+
+        <div class="clearfix">
+            <div class="float" id="screenAux"></div>
+            <div class="float" id="screen">0</div>
+        </div>
+
+        <div class="clearfix">
+            <button id="btnAC">AC</button>
+            <button id="btnSignal">+/-</button>
+            <button id="btnPercent">%</button>
+            <button id="btnDivision" class="btn-function">÷</button>
+        </div>
+
+
+        <div class="clearfix">
+            <button class="btn-number" id="btn7" value="7">7</button>
+            <button class="btn-number" id="btn8" value="8">8</button>
+            <button class="btn-number" id="btn9" value="9">9</button>
+            <button id="btnTimes" class="btn-function">×</button>
+        </div>
+
+        <div class="clearfix">
+            <button class="btn-number" id="btn4" value="4">4</button>
+            <button class="btn-number" id="btn5" value="5">5</button>
+            <button class="btn-number" id="btn6" value="6">6</button>
+            <button id="btnPlus" class="btn-function">+</button>
+        </div>
+
+        <div class="clearfix">
+            <button class="btn-number" id="btn1" value="1">1</button>
+            <button class="btn-number" id="btn2" value="2">2</button>
+            <button class="btn-number" id="btn3" value="3">3</button>
+            <button id="btnMinus" class="btn-function">-</button>
+        </div>
+
+        <div class="clearfix">
+            <button class="btn-number" id="btn0" style="width: 180px; text-align: left; padding-left: 38px" value="0">0</button>
+            <button class="btn-number" id="btnDecimal" value=".">,</button>
+            <button id="btnEqual" class="btn-function">=</button>
+        </div>
+
+    </div>
+
+</body>
+
+<script>
+
+    
+
+
+
+</script>
+
+</html>
